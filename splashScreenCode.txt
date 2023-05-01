@@ -53,3 +53,14 @@ SetWindowLong hWndForm, &HFFF0, Style
 DrawMenuBar hWndForm
 
 End Sub
+
+'Write below code inside form module
+
+'Private Sub UserForm_Initialize()
+ '   HideBar UserForm1
+'End Sub
+
+'Private Sub UserForm_Activate()
+ '   Application.Wait (Now + TimeValue("00:00:05"))
+ '   Unload Me
+'End Sub
