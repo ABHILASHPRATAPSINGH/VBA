@@ -1,3 +1,4 @@
+'Write this code to any seprate module
 #If VBA7 Then
     Public Declare PtrSafe Function FindWindow Lib "user32" _
                 Alias "FindWindowA" _
@@ -53,3 +54,20 @@ SetWindowLong hWndForm, &HFFF0, Style
 DrawMenuBar hWndForm
 
 End Sub
+
+'write this code to where you intialize the code 
+Sub main()
+    Load UserForm1
+    UserForm1.show
+End Sub
+
+'Write below code inside form module
+
+'Private Sub UserForm_Initialize()
+ '   HideBar UserForm1
+'End Sub
+
+'Private Sub UserForm_Activate()
+ '   Application.Wait (Now + TimeValue("00:00:05"))
+ '   Unload Me
+'End Sub
